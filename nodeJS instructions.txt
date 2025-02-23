@@ -1,0 +1,19 @@
+instructions on how to load node_modules and spoonacular-api because they're too big to upload on GitHub
+
+//checks if Node.js is installed
+node -v
+npm -v
+
+//in project directory
+git clone https://github.com/ddsky/spoonacular-api-clients.git
+cd spoonacular-api-clients/javascript
+npm install
+
+
+//cd back into your project dir
+cd ../..
+npm install dotenv axios
+
+
+//you should be able to run the server now
+node index.js
