@@ -7,7 +7,7 @@ document.getElementById("fetch-recipes").addEventListener("click", async () => {
     }
 
     try {
-        const response = await fetch(`http://localhost:3000/recipes?ingredients=${ingredients}`);
+        const response = await fetch(`https://recipe-backend.onrender.com/recipes?ingredients=${ingredients}`);
         const data = await response.json();
 
         if (data.error) {
